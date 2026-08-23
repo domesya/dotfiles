@@ -1,0 +1,10 @@
+[general]
+live_config_reload = true 
+
+[window]
+padding = { x = 4, y = 4 }
+dynamic_padding = true
+
+[font]
+normal = { family = "PxPlus IBM VGA 8x16", style = "Regular" }
+size = 20.0
