@@ -8,3 +8,11 @@ dynamic_padding = true
 [font]
 normal = { family = "PxPlus IBM VGA 8x16", style = "Regular" }
 size = 20.0
+
+[terminal]
+shell = { 
+    program = "/bin/sh", 
+    args = [
+     "-c",
+     "tmux attach-session -t fumo 2>/dev/null || tmux new-session -s fumo"
+     ] }
