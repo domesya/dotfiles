@@ -1,4 +1,4 @@
-ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=#ff00ff,bg=cyan,bold,underline"
+ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=#00aa66,bg=pink,bold,underline"
 
 # Basic auto/tab complete:
 autoload -U compinit
