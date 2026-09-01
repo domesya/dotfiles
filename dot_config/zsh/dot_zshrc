@@ -1,0 +1,11 @@
+ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=#ff00ff,bg=cyan,bold,underline"
+
+# Basic auto/tab complete:
+autoload -U compinit
+zstyle ':completion:*' menu select
+zmodload zsh/complist
+compinit
+_comp_options+=(globdots)		# Include hidden files.
+
+source ~/.local/share/zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
+source ~/.local/share/zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
