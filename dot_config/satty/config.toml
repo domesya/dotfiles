@@ -1,0 +1,7 @@
+[general]
+# Output filename pattern using strftime formatting
+# Example output: Screenshot_20260901_154700.png
+output-filename = "Screenshot_%Y%m%d_%H%M%S.png"
+
+# Optional: Set a fixed default save directory (e.g., your Pictures folder)
+save-path = "~/Pictures/Screenshots"
