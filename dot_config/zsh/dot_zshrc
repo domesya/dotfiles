@@ -1,5 +1,20 @@
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=#00aa66,bg=pink,bold,underline"
 
+# history
+HISTFILE="$HOME/.local/share/shells/.zsh_history"
+HISTSIZE=1000
+SAVEHIST=10000
+
+# Append to history file immediately instead of overwriting on exit
+setopt SHARE_HISTORY
+
+# Do not enter duplicate lines into the history list
+setopt HIST_IGNORE_DUPS
+
+# Remove superfluous blanks from history commands
+setopt HIST_REDUCE_BLANKS
+
+
 # Basic auto/tab complete:
 autoload -U compinit
 zstyle ':completion:*' menu select
