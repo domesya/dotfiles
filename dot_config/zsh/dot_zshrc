@@ -14,6 +14,8 @@ setopt HIST_IGNORE_DUPS
 # Remove superfluous blanks from history commands
 setopt HIST_REDUCE_BLANKS
 
+# Enable ignoring commands that start with a space
+setopt HIST_IGNORE_SPACE
 
 # Basic auto/tab complete:
 autoload -U compinit
