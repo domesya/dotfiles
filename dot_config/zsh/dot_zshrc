@@ -1,4 +1,4 @@
-ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=#00aa66,bg=pink,bold,underline"
+ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=#0066aa,bg=pink,bold,underline"
 
 # history
 HISTFILE="$HOME/.local/share/shells/.zsh_history"
@@ -18,7 +18,9 @@ setopt HIST_REDUCE_BLANKS
 setopt HIST_IGNORE_SPACE
 
 # Basic auto/tab complete:
-autoload -U compinit
+autoload -Uz +X compinit && compinit
+
+zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}'
 zstyle ':completion:*' menu select
 zmodload zsh/complist
 compinit
