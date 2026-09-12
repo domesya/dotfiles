@@ -1,0 +1,9 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=COSMIC Satty Screenshot
+Comment=Capture region and edit in Satty
+Exec=/home/domes/.local/bin/cosmic-satty3.sh
+Icon=satty
+Terminal=false
+Categories=Utility;

@@ -1,0 +1,28 @@
+[config]
+# ...
+[templates.gtk3]
+input_path = './templates/gtk-colors.css'
+output_path = '~/.config/gtk-3.0/colors.css'
+#post_hook = 'gsettings set org.gnome.desktop.interface gtk-theme ""; gsettings set org.gnome.desktop.interface gtk-theme adw-gtk3-{{mode}}'
+
+[templates.gtk4]
+input_path = './templates/gtk-colors.css'
+output_path = '~/.config/gtk-4.0/colors.css'
+#post_hook = '~/.config/matugen/post-hook-scripts/gtk-themes-reload.sh'
+
+[templates.helix]
+input_path = './templates/helix.toml'
+output_path = '~/.config/helix/themes/matugen.toml'
+
+[templates.starship]
+input_path = './templates/starship-colors.toml'
+output_path = '~/.config/starship.toml'
+
+[templates.contour]
+input_path = './templates/contour-matugen.yml'
+output_path = '~/.cache/matugen/contour-matugen.yml'
+
+[templates.zellij]
+input_path = './templates/zellij-theme.kdl.tera'
+output_path = '~/.config/zellij/themes/matugen.kdl'
+post_hook = 'touch ~/.config/zellij/config.kdl'
